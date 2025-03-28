@@ -16,12 +16,15 @@ import AppMenu from '@/components/AppMenu.vue';
                     <slot name="controls"></slot>
                 </div>
             </header>
+            <div class="inner">
+                <slot name="inner"></slot>
+            </div>
         </main>
     </div>
 </template>
 
 <style lang="sass" scoped>
-@use "../assets/styles/index" as area;
+@use "../assets/styles/index" as area
 
 .root     
     display: flex
@@ -42,4 +45,7 @@ import AppMenu from '@/components/AppMenu.vue';
     color: #4d0690
     font-size: 28px
     font-weight: 700
+
+.inner 
+    padding-top: 20px
 </style>
