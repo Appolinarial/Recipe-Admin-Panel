@@ -26,3 +26,34 @@ a
 .align-center
     align-items: center
 
+.row 
+    display: flex
+    margin-bottom: 16px
+
+.col
+    flex: 1 1 50%
+    width: 50%
+
+    &:not(:last-child)
+        margin-right: 16px
+        width: calc(50% - 8px)
+    
+    &-small
+        flex: 1 1 5%
+        width: 5%
+
+.label
+    font-size: 13px
+    padding-bottom: 4px
+
+.subtitle
+    padding-bottom: 12px
+    font-size: 18px
+    font-weight: 700
+    color: #4d0690
+
+.w-100
+    width: 100%
+
+.align-items-flex-end
+    align-items: flex-end
